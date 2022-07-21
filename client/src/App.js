@@ -4,6 +4,8 @@ import ProductList from "./pages/ProductList";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import Cart from "./pages/Cart";
+import LoginSub from "./pages/sub/Login";
+
 import {
   BrowserRouter as Router,
   Routes,
@@ -19,6 +21,7 @@ const App = () => {
     <Router>
       <Routes>
         <Route path="/" element={<Home />}/>
+        <Route path="/sub" element={<LoginSub />}/>
         <Route path="/products/:category" element={<ProductList />}/>
         <Route path="/product/:id" element={<Product />}/>
         <Route path="/cart" element={<Cart />}/>
